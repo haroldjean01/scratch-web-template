@@ -16,4 +16,11 @@ window.addEventListener('load', async () => {
 // fetch all pokemons
 getPokemons();
 
-// Render and
+// Render and fetch
+function displayPokemons() {
+    for (let pokemon of pokemons) {
+        const pokemonEl = renderPokemonCard(pokemon);
+        pokemonListContainer.append(pokemonEl);
+    }
+}
+// displayPokemons();
