@@ -22,9 +22,9 @@ export function renderPokemonDetail(pokemon) {
     const img = document.createElement('img');
     const descriptionEl = document.createElement('p');
     const nameEl = document.createElement('p');
-    const ageEl = document.createElement('p');
+    // const ageEl = document.createElement('p');
     const typeEl = document.createElement('p');
-    const ageAndtypeEl = document.createElement('div');
+    // const ageAndtypeEl = document.createElement('div');
 
     div.classList.add('pokemon-detail');
 
