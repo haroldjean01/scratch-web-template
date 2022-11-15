@@ -1,7 +1,7 @@
-import { getDog } from '../fetch-utils.js';
-import { renderDogDetail } from '../render-utils.js';
+import { getPokemon } from '../fetch-utils.js';
+import { renderPokemonDetail } from '../render-utils.js';
 
-const dogDetailContainer = document.getElementById('dog-detail-container');
+const pokemonDetailContainer = document.getElementById('pokemon-detail-container');
 
 // on load
 window.addEventListener('load', async () => {
@@ -9,9 +9,9 @@ window.addEventListener('load', async () => {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
 
-    // use the id to fetch the dog
-    const dog = await getDog(id);
-    // render and append this dog's details to the container
-    const dogDetail = renderDogDetail(dog.data);
-    dogDetailContainer.append(dogDetail);
+    // use the id to fetch the pokemon
+    const pokemon = await getPokemon(id);
+    // render and append this pokemon's details to the container
+    const pokemonDetail = renderPokemonDetail(pokemon.data);
+    pokemonDetailContainer.append(pokemonDetail);
 });
