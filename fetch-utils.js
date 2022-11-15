@@ -15,5 +15,5 @@ export async function getPokemon(id) {
     // from the pokemons table, select a single dog who has the matching id
     const response = await client.from('Pokedex').select().match({ id: id }).single();
     // and return the response
-    return response;
+    return response.data;
 }

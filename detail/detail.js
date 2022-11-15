@@ -11,7 +11,8 @@ window.addEventListener('load', async () => {
 
     // use the id to fetch the pokemon
     const pokemon = await getPokemon(id);
+    console.log(pokemon);
     // render and append this pokemon's details to the container
-    const pokemonDetail = renderPokemonDetail(pokemon.data);
+    const pokemonDetail = renderPokemonDetail(pokemon);
     pokemonDetailContainer.append(pokemonDetail);
 });

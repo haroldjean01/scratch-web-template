@@ -34,10 +34,10 @@ export function renderPokemonDetail(pokemon) {
     descriptionEl.textContent = pokemon.description;
     descriptionEl.classList.add('description');
 
-    typeEl.textContent = pokemon.type;
-    typeEl.classList.add('type');
+    // typeEl.textContent = pokemon.type;
+    // typeEl.classList.add('type');
 
-    typeEl.append(typeEl);
+    // typeEl.append(typeEl);
 
     // img.src = `../assets/${pokemon.type}.jpeg`;
 
